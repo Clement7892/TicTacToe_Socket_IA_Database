@@ -14,7 +14,7 @@ const con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "tictactoe"
+    database: "morpion"
 });
 
 con.connect(function(err) {

@@ -31,7 +31,7 @@ class Game{
                 this.x.ws.send(JSON.stringify({"action":"end","board":this.board, "message":"You lost!"}));
                 this.o.ws.send(JSON.stringify({"action":"end","board":this.board, "message":"You won!"}));
             }
-            // this.persistResult(con, this.id,this.x.name,this.o.name,winner);
+            this.persistResult(con, this.id,this.x.name,this.o.name,winner);
         }
     }
     switchPlayers(valid){

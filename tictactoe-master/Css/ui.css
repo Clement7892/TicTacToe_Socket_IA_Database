@@ -1,0 +1,128 @@
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --sidebar-width: 20%;
+}
+
+body {
+    /* background-color: #006666; */
+    background-color: white;
+}
+
+.containers {
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 100%;
+    clear: both;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    box-shadow: 5px 10px 20px 10px gray;
+    margin-top: 3%;
+}
+
+.sidebar {
+    background-color: #E9ECEF;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.mainbar {
+    background-color: white;
+    /* position: relative; */
+}
+
+.board {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-left: 10em;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed gray;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.newGameIA {
+    display: block;
+    width: 95%;
+    height: 30px;
+    margin: 15px auto;
+    color: white;
+    font-size: 1.3rem;
+    background-color: gray;
+    text-align: center;
+}
+
+.level {
+    display: block;
+    width: 95%;
+    height: 30px;
+    margin: 15px auto;
+    color: white;
+    font-size: 1.3rem;
+    background-color: gray;
+    cursor: pointer;
+    text-align: center;
+}
+
+.not-selected {
+    opacity: 0.5;
+}
+
+.not-selected:hover {
+    opacity:1;
+}
+
+.start {
+    cursor: pointer;
+    display: block;
+    font-size: 1.3rem;
+    margin: 15px auto;
+    width: 95%;
+    height: 30px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+
+.ingame {
+    display:none;
+    color: gray;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2em;
+    margin-left: -15%;
+}
+
+.ingame > p {
+    margin: 0px;
+}
+
+.align-center {
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+.hidden{
+    display: none;
+}
+#loader {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.align-center {
+    text-align: center;
+}
+.board{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.cell{
+    height: 100px;
+    border: 1px solid #000;
+    font-size: 52px;
+    padding: 0 42px;
+}
+.cell.selectable:hover{
+    background-color: #20B2AA;
+}
+/* .title{
+    text-align: center;
+    font-size: 26px;
+} */
+.restart {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 300px;
+}

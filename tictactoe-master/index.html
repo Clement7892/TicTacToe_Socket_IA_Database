@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Morpion</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="Css/index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="align-center">Morpion</h1>
+            </div>
+            <div class="content">
+                <div class="join-game">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" maxlength="100">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <button type="button" id="new" class="btn btn-dark col-md-6">New game</button>
+                            <button type="button" id="existing" class="btn btn-secondary col-md-6">Join existing game</button>
+                            <a href="../tictactoe-master/Bot/bot.html" class="btn btn-secondary col-md-6" type="button">Game Bot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+        <script src="Board.js"></script>
+        <button class="restart" onclick="location.reload();">Back</button>
+    </body>
+</html>
